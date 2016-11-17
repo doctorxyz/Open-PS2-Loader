@@ -791,10 +791,9 @@ static iop_device_ops_t fs_functarray={
 	(void*)&fs_dummy,
 	(void*)&fs_dummy
 };
-
 static iop_device_t fs_driver={
 	"mass",
-	IOP_DT_FS|IOP_DT_FSEXT,
+	IOP_DT_FS,
 	2,
 	"USB mass storage driver",
 	&fs_functarray
